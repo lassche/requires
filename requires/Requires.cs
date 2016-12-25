@@ -16,6 +16,9 @@ using System.Diagnostics;
 
 namespace gg.requires
 {
+    /// <summary>
+    /// Exception thrown when a requires fails. 
+    /// </summary>
     public class RequirementFailedException : Exception
     {
         public RequirementFailedException() : base()
@@ -27,6 +30,9 @@ namespace gg.requires
         }
     }
 
+    /// <summary>
+    /// Minimal class to support simple precondition checks.
+    /// </summary>
     public static class Requires
     {
         [Conditional("DEBUG")]
